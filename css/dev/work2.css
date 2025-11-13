@@ -8,6 +8,18 @@
   overflow: hidden;
   position: relative;
 }
+.item-work::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+  background-color: #0e0e0e;
+  pointer-events: none;
+}
 .item-work__picture {
   aspect-ratio: 684/513;
   position: relative;
@@ -27,7 +39,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: scale 0.8s;
+  transition: scale 0.5s;
 }
 .item-work__body {
   font-family: "Satoshi", sans-serif;

@@ -11,20 +11,19 @@
 		<link rel="preload" href="./assets/fonts/Chillax-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>Home Page</title>
-		<script type="module" crossorigin="" src="./js/index.min.js?v=1762098791426"></script>
-		<link rel="modulepreload" crossorigin="" href="./js/common.min.js?v=1762098791426">
-		<link rel="modulepreload" crossorigin="" href="./js/main.min.js?v=1762098791426">
-		<link rel="modulepreload" crossorigin="" href="./js/watcher.min.js?v=1762098791426">
-		<link rel="modulepreload" crossorigin="" href="./js/widgetheader.min.js?v=1762098791426">
-		<link rel="stylesheet" crossorigin="" href="./css/main.min.css?v=1762098791426">
-		<link rel="stylesheet" crossorigin="" href="./css/widgetheader.min.css?v=1762098791426">
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1762098791426">
-		<link rel="stylesheet" crossorigin="" href="./css/work.min2.css?v=1762098791426">
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1763069227282"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/common.min.js?v=1763069227282">
+		<link rel="modulepreload" crossorigin="" href="./js/main.min.js?v=1763069227282">
+		<link rel="modulepreload" crossorigin="" href="./js/widgetheader.min.js?v=1763069227282">
+		<link rel="stylesheet" crossorigin="" href="./css/main.min.css?v=1763069227282">
+		<link rel="stylesheet" crossorigin="" href="./css/widgetheader.min.css?v=1763069227282">
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1763069227282">
+		<link rel="stylesheet" crossorigin="" href="./css/work.min2.css?v=1763069227282">
 	</head>
 	<body>
 		<div class="wrapper">
 			<!-- @format -->
-			<header data-fls-header="" class="header">
+			<header data-fls-header="" data-fls-header-scroll="100" data-fls-header-scroll-show="1000" class="header">
 				<div class="header__container">
 					<div class="header__body">
 						<img src="./assets/img/logo.svg" alt="Image" class="header__logo">
@@ -65,13 +64,11 @@
 			<!-- @format -->
 			<main class="page page--home">
 				<section class="page__hero hero">
-					<div class="hero__container">
-						<div class="hero__picture">
-							<picture>
-								<source media="(max-width: 600px)" srcset="./assets/img/arik-600.webp" type="image/webp">
-								<img class="hero__image" alt="Hero Image" src="./assets/img/arik.webp">
-							</picture>
-						</div>
+					<div data-fls-parallax-parent="" class="hero__container">
+						<picture>
+							<source media="(max-width: 600px)" srcset="./assets/img/arik-600.webp" type="image/webp">
+							<img data-fls-parallax="" class="hero__image" alt="Hero Image" src="./assets/img/arik.webp">
+						</picture>
 						<div data-fls-blockhead="" class="hero__blockhead blockhead">
 							<h1 class="blockhead__title blockhead__title--size-160">
 								Web Designer
@@ -87,7 +84,7 @@
 					</div>
 				</section>
 				<div class="page__clients clients">
-					<ul data-fls-watcher="" class="clients__container">
+					<ul data-fls-watcher="" data-fls-watcher-once="" class="clients__container">
 						<li class="clients__item">
 							<img src="./assets/img/clients/01.svg" alt="Image">
 						</li>
@@ -109,7 +106,7 @@
 					</ul>
 				</div>
 				<div class="page__skills skills">
-					<div data-fls-watcher="" class="skills__container">
+					<div data-fls-watcher="" data-fls-watcher-once="" class="skills__container">
 						<article data-fls-skill="" class="skill">
 							<h4 class="skill__title">
 								<a href="#" class="skill__link-title">Web Design</a>
@@ -139,9 +136,9 @@
 						</article>
 					</div>
 				</div>
-				<section class="page__selected-work selected-work">
+				<section data-fls-watcher="" data-fls-watcher-once="" class="page__selected-work selected-work">
 					<div class="selected-work__container">
-						<div data-fls-watcher="" data-fls-widgetheader="" class="selected-work__widgetheader widgetheader">
+						<div data-fls-widgetheader="" class="selected-work__widgetheader widgetheader">
 							<h2 class="widgetheader__title">
 								Selected
 								<span>Work</span>
@@ -210,13 +207,13 @@
 				</section>
 				<section class="section page__process process">
 					<div class="process__container">
-						<div data-fls-watcher="" data-fls-blockhead="" class="process__blockhead blockhead">
-							<span class="blockhead__label">The Process</span>
-							<h2 class="blockhead__title">
+						<div data-fls-blockhead="" class="process__blockhead blockhead">
+							<span data-fls-watcher="" data-fls-watcher-once="" class="blockhead__label">The Process</span>
+							<h2 data-fls-watcher="" data-fls-watcher-once="" class="blockhead__title">
 								Your Website
 								<span>in 5 steps</span>
 							</h2>
-							<div class="blockhead__text">
+							<div data-fls-watcher="" data-fls-watcher-once="" class="blockhead__text">
 								<p>
 									Our process ensures that we create a website tailored to your
             business needs.
@@ -228,7 +225,7 @@
 								<div class="items-process__arrow items-process__arrow--icon-arrow items-process__arrow--arrow-d"></div>
 							</div>
 							<div class="items-process__body">
-								<div class="items-process__item item-process">
+								<div data-fls-watcher="" data-fls-watcher-once="" class="items-process__item item-process">
 									<article data-fls-item="" class="item-process__body item">
 										<div class="item__time">2 Hours</div>
 										<div class="item__label">Do we Match?</div>
@@ -248,7 +245,7 @@
 										</ul>
 									</article>
 								</div>
-								<div class="items-process__item item-process">
+								<div data-fls-watcher="" data-fls-watcher-once="" class="items-process__item item-process">
 									<article data-fls-item="" class="item-process__body item">
 										<div class="item__time">1 Week</div>
 										<div class="item__label">lorem ipsum</div>
@@ -269,7 +266,7 @@
 										</ul>
 									</article>
 								</div>
-								<div class="items-process__item item-process">
+								<div data-fls-watcher="" data-fls-watcher-once="" class="items-process__item item-process">
 									<article data-fls-item="" class="item-process__body item">
 										<div class="item__time">1 Week</div>
 										<div class="item__label">Some Magic</div>
@@ -290,7 +287,7 @@
 										</ul>
 									</article>
 								</div>
-								<div class="items-process__item item-process">
+								<div data-fls-watcher="" data-fls-watcher-once="" class="items-process__item item-process">
 									<article data-fls-item="" class="item-process__body item">
 										<div class="item__time">2 Weeks</div>
 										<div class="item__label">More Magic</div>
@@ -311,7 +308,7 @@
 										</ul>
 									</article>
 								</div>
-								<div class="items-process__item item-process">
+								<div data-fls-watcher="" data-fls-watcher-once="" class="items-process__item item-process">
 									<article data-fls-item="" class="item-process__body item">
 										<div class="item__time">2 Hours</div>
 										<div class="item__label">Ready to go</div>
@@ -340,11 +337,11 @@
 				<section class="page__reviews reviews">
 					<div class="reviews__container">
 						<div data-fls-blockhead="" class="reviews__blockhead blockhead">
-							<h2 class="blockhead__title blockhead__title--size-96">
+							<h2 data-fls-watcher="" data-fls-watcher-once="" class="blockhead__title blockhead__title--size-96">
 								What my
 								<span>clients say</span>
 							</h2>
-							<div class="blockhead__text blockhead__text--size-18">
+							<div data-fls-watcher="" data-fls-watcher-once="" class="blockhead__text blockhead__text--size-18">
 								<p>
 									See what my clients have to say about working with me and the
             results I helped them achieve.
@@ -352,7 +349,7 @@
 							</div>
 						</div>
 						<div data-fls-masonry="" class="reviews__items">
-							<article data-fls-border="" data-fls-masonry-item="" class="reviews__item item-review">
+							<article data-fls-watcher="" data-fls-watcher-once="" data-fls-border="" data-fls-masonry-item="" class="reviews__item item-review">
 								<img src="./assets/img/clients/03.svg" alt="Image" class="item-review__icon">
 								<h4 class="item-review__title">
 									<a href="#" class="item-review__link-title">Amazing Results with Arik’s Premium Web Design Services.</a>
@@ -375,7 +372,7 @@
 									</div>
 								</div>
 							</article>
-							<article data-fls-border="" data-fls-masonry-item="" class="reviews__item item-review">
+							<article data-fls-watcher="" data-fls-watcher-once="" data-fls-border="" data-fls-masonry-item="" class="reviews__item item-review">
 								<img src="./assets/img/clients/06.svg" alt="Image" class="item-review__icon">
 								<h4 class="item-review__title">
 									<a href="#" class="item-review__link-title">Expert Webflow and SEO Services: Excellent Work, Great Results.</a>
@@ -399,7 +396,7 @@
 									</div>
 								</div>
 							</article>
-							<article data-fls-border="" data-fls-masonry-item="" class="reviews__item item-review">
+							<article data-fls-watcher="" data-fls-watcher-once="" data-fls-border="" data-fls-masonry-item="" class="reviews__item item-review">
 								<img src="./assets/img/clients/05.svg" alt="Image" class="item-review__icon">
 								<h4 class="item-review__title">
 									<a href="#" class="item-review__link-title">Amazing Results with Arik’s Premium Web Design Services.</a>
@@ -422,7 +419,7 @@
 									</div>
 								</div>
 							</article>
-							<article data-fls-border="" data-fls-masonry-item="" class="reviews__item item-review">
+							<article data-fls-watcher="" data-fls-watcher-once="" data-fls-border="" data-fls-masonry-item="" class="reviews__item item-review">
 								<img src="./assets/img/clients/04.svg" alt="Image" class="item-review__icon">
 								<h4 class="item-review__title">
 									<a href="#" class="item-review__link-title">Expert Webflow and SEO Services: Excellent Work, Great Results.</a>
@@ -446,7 +443,7 @@
 									</div>
 								</div>
 							</article>
-							<article data-fls-border="" data-fls-masonry-item="" class="reviews__item item-review">
+							<article data-fls-watcher="" data-fls-watcher-once="" data-fls-border="" data-fls-masonry-item="" class="reviews__item item-review">
 								<img src="./assets/img/clients/02.svg" alt="Image" class="item-review__icon">
 								<h4 class="item-review__title">
 									<a href="#" class="item-review__link-title">Web Design and Content Solutions: Stand Out from the Crowd.</a>
@@ -469,7 +466,7 @@
 									</div>
 								</div>
 							</article>
-							<article data-fls-border="" data-fls-masonry-item="" class="reviews__item item-review">
+							<article data-fls-watcher="" data-fls-watcher-once="" data-fls-border="" data-fls-masonry-item="" class="reviews__item item-review">
 								<img src="./assets/img/clients/01.svg" alt="Image" class="item-review__icon">
 								<h4 class="item-review__title">
 									<a href="#" class="item-review__link-title">
@@ -500,8 +497,8 @@
 					</div>
 				</section>
 				<section class="about-module">
-					<div class="about-module__header">
-						<div class="about-module__picture">
+					<div data-fls-parallax-parent="" class="about-module__header">
+						<div data-fls-parallax="" class="about-module__picture">
 							<picture>
 								<source media="(max-width: 600px)" srcset="./assets/img/arik-600.webp" type="image/webp">
 								<img class="about-module__image" alt="Arik" src="./assets/img/arik.webp">
@@ -519,7 +516,7 @@
 						</div>
 					</div>
 					<div class="about-module__container">
-						<div class="about-module__body">
+						<div data-fls-watcher="" data-fls-watcher-once="" class="about-module__body">
 							<h4 class="about-module__title">
 								A website that leaves
 								<span>a lasting impression!</span>
@@ -534,7 +531,7 @@
               bring your vision to life!
 									</p>
 								</div>
-								<ul data-fls-social="" class="about-module__social social">
+								<ul data-fls-watcher="" data-fls-watcher-once="" data-fls-social="" class="about-module__social social">
 									<li class="social__item">
 										<a href="#" target="_blank" class="social__link social__link--icon-s-twit"></a>
 									</li>
@@ -562,18 +559,20 @@
 				<section class="lets-talk__body">
 					<div class="lets-talk__container">
 						<div data-fls-blockhead="" class="blockhead blockhead--gap-8">
-							<span class="blockhead__label">Project in mind?</span>
-							<h2 class="blockhead__title">
+							<span data-fls-watcher="" data-fls-watcher-once="" class="blockhead__label">Project in mind?</span>
+							<h2 data-fls-watcher="" data-fls-watcher-once="" class="blockhead__title">
 								Let’s make your
 								<span>Website shine</span>
 							</h2>
-							<div class="blockhead__text">
+							<div data-fls-watcher="" data-fls-watcher-once="" class="blockhead__text">
 								<p>
 									Premium web design, webflow, and SEO services to help your business
             stand out.
 								</p>
 							</div>
-							<a href="#" data-fls-button="" class="blockhead__button button button--icon button--lite button--icon-arrow button--arrow-ru">Get in touch</a>
+							<div data-fls-watcher="" data-fls-watcher-once="" class="blockhead__footer">
+								<a href="#" data-fls-button="" class="blockhead__button button button--icon button--lite button--icon-arrow button--arrow-ru">Get in touch</a>
+							</div>
 						</div>
 					</div>
 				</section>

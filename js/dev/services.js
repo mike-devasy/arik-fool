@@ -1,6 +1,5 @@
 import "./main.min.js";
 import { d as dataMediaQueries, s as slideUp, a as slideDown, g as getDigFormat } from "./common.min.js";
-import "./watcher.min.js";
 function showMore() {
   const showMoreBlocks = document.querySelectorAll("[data-fls-showmore]");
   let showMoreBlocksRegular;
